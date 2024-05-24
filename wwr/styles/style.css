@@ -55,9 +55,8 @@ h4 /*subtitle*/ {
 }
 .book, .join {
     background-color: #9abcff;
-    color: black;
-    color: solid black;
     text-decoration: none;
+    color: black;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
