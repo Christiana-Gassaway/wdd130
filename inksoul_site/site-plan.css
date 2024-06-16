@@ -100,6 +100,8 @@ p.colored {
 }
 
 nav {
+  font-family: var(--paragraph-font);
+  font-weight: bold;
   background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
@@ -172,4 +174,29 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+/*  My Added CSS  */
+#inksoul_cover {
+  width: 300px;
+}
+
+#logo_transparent {
+  width: 200px;
+}
+
+#amyfeather {
+  width: 300px;
+}
+
+#teddybanyr {
+  width: 300px;
+}
+
+#jackbanyr {
+  width: 300px;
+}
+
+#world-map {
+  width: 200px;
 }
