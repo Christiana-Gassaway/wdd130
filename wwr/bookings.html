@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function onload() {
+
+            let loginForm = document.getElementById("rafting-form");
+
+            loginForm.addEventListener("submit", (e) => {
+            alert("Thank you for booking with Wonder Waves!")
+            });
+            }
+        </script>
+        <title>Wonder Waves | Book an Adventure</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body onload="onload()">
+        <div id="content">
+            <header>
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="images/wonder-waves-logo-white.png" alt="Wonder Waves Logo">
+                </a>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="bookings.html">Book an Adventure</a>
+                    <a href="site-plan-rafting.html">Site Plan</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </header>
+            <main class="bookings-grid">
+                <div class="bookings-msg-grid">
+                    <div class="bookings-msg">
+                        <h1 class="bookings-title">Book an Adventure Today!</h1>
+                        <p id="bookings-msg-p">Here at Wonder Waves, we offer a variety of reservations, tours and rafting lessons for families and children
+                            aged 7 and up. Our guides and teachers are thoroughly trained to ensure a safe and fun trip for all those who participate.
+                            Jump in and sign up today to start your new personalized adventure!
+                        </p>
+                    </div>
+                    <img id="memories-img" src="images/memories.png" alt="smiling person rafting">
+                </div>
+                <div class="rapids-sign-up-form">
+                    <form action="#" id="rafting-form">
+                        <div class="sign-up-grid">
+                            <div class="sign-up-left">
+                                <h2>Full Name:</h2>
+                                <input type="text" id="input-name">
+                                <h2>Address:</h2>
+                                <input type="text" id="address-1">
+                                <div id="city-state-zip">
+                                    <h3>City: <input type="text" id="city"></h3>
+                                    <h3>State: <input type="text" id="state"></h3>
+                                    <h3>Zip: <input type="text" id="zip"></h3>
+                                </div>
+                                <h2>Phone Number:</h2>
+                                <input type="tel" id="phone-number" placeholder="208-XXX-XXXX">
+                            </div>
+                            <div id="sign-up-right">
+                                <h2>Rafting Date:</h2>
+                                <input type="date" id="calendar">
+                                <h2>Number of Party Members:</h2>
+                                <input type="text" id="party-members">
+                                <h2>Names of Party Members:</h2>
+                                <textarea name="textarea" id="party-names"></textarea>
+                            </div>
+
+                            <div id="waiver">
+                                <h2>Wonder Waves Liability and Consent Form</h2>
+                                <textarea readonly="true" id="waiver-text">
+        Wonder Waves Waiver and Release of Liability
+    I, [Participant's Full Name], hereby acknowledge that I am voluntarily participating in river rafting activities provided by Wonder Waves. I understand that these activities involve inherent risks, including but not limited to physical exertion, changing water conditions, submerged rocks and debris, inclement weather, and the possibility of injury or death.
+
+    In consideration for being permitted to participate in these activities, I agree to assume all risks and responsibilities associated with my participation. I understand and acknowledge that:
+
+    - I am aware of the risks involved in river rafting, including the risk of personal injury, death, or property damage.
+    - I am in good health and have no medical conditions that would prevent me from safely participating in this activity.
+    - I will comply with all instructions given by the guides and staff of Wonder Waves during the river rafting trip.
+
+    In consideration for being permitted to participate, I, on behalf of myself and my party, will not sue Wonder Waves, its officers, employees, agents, and affiliates from any and all liability, claims, demands, actions, and causes of action whatsoever arising out of or related to any loss, damage, or injury, that may be sustained by me, or to any property belonging to me, while participating in such activities, with the exception being cases of suspected negligence or malintent among the Wonder Waves staff.
+
+    I understand and agree that this waiver and release of liability extends to all claims of every kind or nature whatsoever, foreseen or unforeseen, known or unknown.
+
+    I have carefully read this waiver and release of liability and fully understand its contents. I am aware that by signing this document, I am waiving certain legal rights that I or affiliated party members may have against the Released Parties.
+                                </textarea>
+                                <div>
+                                    <input type="checkbox" id="agree-to-waiver">
+                                    <label id="label-words">I agree to the Wonder Waves Liability and Consent form</label>
+                                </div>
+                            <input type="submit" value="Submit" id="submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <footer>
+                <p>Wonder Waves &copy; 2024 - Christiana Gassaway</p>
+                <p><a href="site-plan-rafting.html">Site Plan</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="images/facebook.png" alt="fb icon">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/twitter.png" alt="twitter icon">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="images/instagram.png" alt="instagram icon">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

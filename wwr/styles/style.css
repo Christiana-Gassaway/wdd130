@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Poetsen+One&display=swap');
 
+/* - - - HOME PAGE CSS - - - */
 
 #content {
     max-width: 1600px;
@@ -40,7 +41,7 @@ nav a {
 }
 nav a:hover {
     color:#ffffff;
-    background-color: #124198d0;
+    background-color: #124198;
 }
 #hero {
     display: grid;
@@ -250,4 +251,199 @@ footer .social img {
     footer {
         margin-top: 25px;
     }
+}
+
+
+/* - - - BOOKINGS PAGE CSS - - - */
+
+/* UPPER SECTION */
+.bookings-msg-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f29e54;
+}
+.bookings-msg {
+    width: 500px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #ffe8dc;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px #463a2f;
+    text-align: center;
+}
+.bookings-title {
+    color: #052560;
+    font-family: "Poetsen One";
+}
+#memories-img {
+    width: 500px;
+    margin: auto;
+    border: 10px solid #fff4ea;
+    box-shadow: 5px 5px 10px #463a2f;
+}
+
+/* MIDDLE SECTION */
+.sign-up-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 70px 20px 0px 20px;
+}
+
+/* Sign-Up Left */
+.sign-up-left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: auto;
+    height: auto;
+    margin-right: 5px;
+    padding: 10px;
+    background-color: #9abcff;
+    border: 10px solid #7197e1;
+    font-size: 11px;
+}
+#input-name {
+    width: 500px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+#address-1 {
+    width: 500px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+#city {
+    width: 100px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 8px;
+    border-radius: 5px;
+}
+#state {
+    width: 100px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#zip {
+    width: 100px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 12px;
+    border-radius: 5px;
+}
+#phone-number {
+    width: 115px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Sign-Up Right */
+#sign-up-right {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: #9abcff;
+    border: 10px solid #7197e1;
+    font-size: 11px;
+}
+#calendar {
+    width: 115px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+#party-members {
+    width: 115px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+#party-names {
+    width: 500px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    resize: none;
+}
+
+/* Waiver */
+#waiver {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #7197e1;
+}
+#waiver-text {
+    width: 98%;
+    height: 300px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    resize: none;
+}
+#label-words {
+    font-size: 16px;
+    font-weight: bold;
+}
+#agree-to-waiver{
+    width: 20px;
+    height: 20px;
+}
+#submit {
+    width: 130px;
+    height: 50px;
+    background-color: #f0f2ff;
+    border: none;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+#submit:hover {
+    background-color: #172b53;
+    color: white;
+    text-decoration: underline;
 }
