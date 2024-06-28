@@ -201,6 +201,10 @@ nav a:hover {
   width: 200px;
 }
 
+#charts {
+  width: 250px;
+}
+
 #home-wire {
   width: 350px;
 }
