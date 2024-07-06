@@ -53,27 +53,22 @@ header {
 
 .hero {
     display: grid;
-    grid-template-columns: repeat(5fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 #hero-box {
-    grid-column: 1/5;
+    grid-column: 1/6;
     grid-row: 1/4;
     z-index: 0;
 }
 #hero-img {
     width: 100%;
 }
-#hero-msg {
-    grid-column: 3/3;
-    grid-row: 5/5;
-    z-index: 1;
-    padding-left: 35px;
-}
 .home-title {
     color: #0a783d;
     font-family: "kalam";
     font-weight: bold;
     font-size: 2em;
+    text-align: center;
     margin-top: 70px;
     margin-bottom: 70px;
 }
