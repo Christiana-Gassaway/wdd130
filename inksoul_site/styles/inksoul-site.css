@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&display=swap');
+
+
+/* - - - General Formatting - - - */
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+body {
+    background-color: #f0fff5;
+    font-family: "Jost", Arial, sans-serif;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/* - - - Header - - - */
+
+header {
+    background-color: #12e772;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+.logo {
+    width: 80px;
+}
+#logo-link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+    z-index: 1;
+}
+.header-links {
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+.header-links a {
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    padding: 35px;
+}
+.header-links a:hover {
+    color: white;
+    background-color: #0e8644;
+}
+
+
+/* - - - Hero Box - - - */
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(5fr);
+}
+#hero-box {
+    grid-column: 1/5;
+    grid-row: 1/4;
+    z-index: 0;
+}
+#hero-img {
+    width: 100%;
+}
+#hero-msg {
+    grid-column: 3/3;
+    grid-row: 5/5;
+    z-index: 1;
+    padding-left: 35px;
+}
+.home-title {
+    color: #0a783d;
+    font-family: "kalam";
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+
+/* - - - Middle Paragraph - - - */
+
+.middle-paragraph-p1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.mp-message {
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    padding: 30px 30px;
+    background-color: #12e772;
+    border: 10px solid #0e8644;
+    box-shadow: 5px 5px 10px #4b5a52;
+    text-align: center;
+    font-size: .9em;
+}
+#character-sketches {
+    width: 400px;
+    margin: auto;
+    border: 10px solid #0e8644;
+    box-shadow: 5px 5px 10px #4b5a52;
+}
+
+
+/* - - - Middle Section - - - */
+
+#middle-section-header {
+    text-align: center;
+    font-family: "kalam";
+    color:#0a783d;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+#middle-section-p1-icons {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+#middle-section-p1-icons img {
+    transition: .5s;
+}
+#middle-section-p1-icons img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+#amy-icon-link {
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+.amy-icon {
+    width: 300px;
+    border: 10px solid #038d41;
+    box-shadow: 5px 5px 10px #4b5a52;
+    margin: auto;
+}
+#teddy-icon-link {
+    grid-column: 4/4;
+    grid-row: 1/1
+}
+.teddy-icon {
+    width: 300px;
+    border: 10px solid #dc9667;
+    box-shadow: 5px 5px 10px #4b5a52;
+    margin: auto;
+}
+#jack-icon-link {
+    grid-column: 6/6;
+    grid-row: 1/1;
+}
+.jack-icon {
+    width: 300px;
+    border: 10px solid #da072e;
+    box-shadow: 5px 5px 10px #4b5a52;
+    margin: auto;
+}
+#h2-1 {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    text-align: center;
+    color: #038d41;
+}
+#h2-2 {
+    grid-column: 4/4;
+    grid-row: 2/2;
+    text-align: center;
+    color: #dc9667;
+}
+#h2-3 {
+    grid-column: 6/6;
+    grid-row: 2/2;
+    text-align: center;
+    color: #da072e;
+}
+#click-to-read {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* - - - Footer - - - */
+
+.footer-section {
+    color: white;
+    background-color: #0e8644;
+    font-family: 'Jost', 'Arial', sans-serif;
+    padding: 25px 50px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer-1, #footer-2, #footer-3{
+    color: white;
+    font-family: 'Jost', 'Arial', sans-serif;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+#footer-2:hover, #footer-3:hover {
+    color: black;
+    text-decoration: underline;
+}
+.footer-section p {
+    font-size: 1.2em;
+}
+#return-to-top-button a {
+    background-color: #a0d209;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+#return-to-top-button:hover a {
+    background-color: #3f5305;
+    text-decoration: none;
+    color: white;
+}
