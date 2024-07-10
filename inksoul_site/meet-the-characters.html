@@ -3,6 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let slideIndex = 1;
+        window.onload = function () {
+            showSlides(slideIndex)
+        }
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
     <title>Inksoul | Homepage</title>
     <link type="text/css" rel="stylesheet" href="styles/inksoul-site.css">
 </head>
@@ -23,12 +54,41 @@
             <h1>Meet the Characters</h1>
             <p>[Words to be added]</p>
         </div>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/001_AmyFeather.jpeg" alt="An illustration of Amy Feather" style="width:100%">
+        <div class="text">Amy Feather</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/002_TeddyBanyr.jpeg"  alt="An illustration of Teddy Dotter" style="width:100%">
+        <div class="text">Teddy Dotter</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/003_JackBanyr.jpeg" alt="An illustration of Jack Dotter" style="width:100%">
+        <div class="text">Jack Dotter</div>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
         <div class="lower-paragraph-p2">
-            <div id="character-pictures">
-                <img class="amy-full-image" src="images/001_AmyFeather.jpeg" alt="An illustration of Amy Feather">
-                <img class="teddy-full-image" src="images/002_TeddyBanyr.jpeg" alt="An illustration of Teddy Dotter">
-                <img class="jack-full-image" src="images/003_JackBanyr.jpeg" alt="An illustration of Jack Dotter">
-            </div>
             <div id="amy-paragraph">
                 <h1>
                     Amy Feather
