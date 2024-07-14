@@ -6,6 +6,12 @@
     <script>
         let slideIndex = 1;
         window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const slideParam = urlParams.get('slide');
+            const slideNum = parseInt(slideParam)
+            if(!isNaN(slideNum)) {
+                slideIndex = slideNum
+            }
             showSlides(slideIndex)
         }
         // Next/previous controls
@@ -21,16 +27,19 @@
         function showSlides(n) {
             let i;
             let slides = document.getElementsByClassName("mySlides");
+            let paragraphs = document.getElementsByClassName("character-description");
             let dots = document.getElementsByClassName("dot");
             if (n > slides.length) {slideIndex = 1}
             if (n < 1) {slideIndex = slides.length}
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
+                paragraphs[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
             slides[slideIndex-1].style.display = "block";
+            paragraphs[slideIndex-1].style.display = "block";
             dots[slideIndex-1].className += " active";
         }
     </script>
@@ -52,70 +61,77 @@
     <main>
         <div class="upper-section-p2">
             <h1>Meet the Characters</h1>
-            <p>[Words to be added]</p>
+            <p>Inksoul has a wide variety of characters involved in its central plot, but the main three in which the story focuses on are Amy, Teddy, and Jack. Initially, the plot focuses on the two siblings Teddy and Jack—revealing that Teddy is beginning his final year of school after being transferred several times in the past due to bullying. On the first day, he has the misfortune of re-encountering someone from his past: an ex-friend, come to torment Teddy all over again; only for Teddy to unexpectedly cross paths with his mysterious new classmate, Amy Feather. As Teddy deals with his current situation, Amy and Jack have their own pursuits as well—though as if out of fate, all of their stories converge on the same setting, Laureline High School. Read below to find out how exactly their tales unfold!</p>
         </div>
 
+    <div id="slideshow-and-paragraphs">
+        <div id="slideshow-all">
+            <div class="slideshow-container">
 
-    <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/001_AmyFeather.jpeg" alt="An illustration of Amy Feather" style="width:100%">
+                    <div class="text">Amy Feather</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="images/001_AmyFeather.jpeg" alt="An illustration of Amy Feather" style="width:100%">
-        <div class="text">Amy Feather</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/002_TeddyBanyr.jpeg"  alt="An illustration of Teddy Dotter" style="width:100%">
+                    <div class="text">Teddy Dotter</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/003_JackBanyr.jpeg" alt="An illustration of Jack Dotter" style="width:100%">
+                    <div class="text">Jack Dotter</div>
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
-    
-        <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="images/002_TeddyBanyr.jpeg"  alt="An illustration of Teddy Dotter" style="width:100%">
-        <div class="text">Teddy Dotter</div>
-        </div>
-    
-        <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="images/003_JackBanyr.jpeg" alt="An illustration of Jack Dotter" style="width:100%">
-        <div class="text">Jack Dotter</div>
-        </div>
-    
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
 
         <div class="lower-paragraph-p2">
-            <div id="amy-paragraph">
+            <div id="amy-paragraph" class="character-description">
                 <h1>
                     Amy Feather
                 </h1>
-                <p>[Words about Amy Feather]</p>
+                <p>Amy is the main protagonist of Inksoul, though the role is often shared between her and Teddy. Private and blunt by nature, she's the type to normally keep to herself without much regard for those around her. Upon her meeting with Teddy though, she displays sympathy for his bullying situation, and the pair become somewhat unlikely friends. Early on, she hints at her “interesting” hobbies—being particularly skilled in both physical combat and observation, until she eventually reveals that she came to Laureline for the precise purpose of hunting down Inksouls. It is unknown what exactly her intentions are for doing this, or what her “gift” even does, but whatever the reason, Teddy ends up viewing her with immediate respect—remarking that her strength is unlike anything he has ever seen. She also apparently has an affinity for sweets.</p>
             </div>
-            <div id="teddy-paragraph">
+            <div id="teddy-paragraph" class="character-description">
                 <h1>
                     Teddy Dotter
                 </h1>
-                <p>[Words about Teddy Dotter]</p>
+                <p>Teddy is the first protagonist introduced in Inksoul, alongside his brother Jack. Teddy is the younger of the two siblings, currently hoping to graduate from his last year of high school and become an engineer. However, Teddy, unlike all of his peers, is “ungifted”—meaning in a world full of special powers, he is essentially crippled. Because of this, Teddy found himself constantly at the butt of others' jokes—being ostracized or even mocked for something entirely out of his control. The last straw turns out to be Teddy's first day of senior year at Laureline, when Tristain, an old tormentor of his, is revealed to be a student in his homeroom class. Being an innate pacifist, he tries to keep the bullying situation quiet this time as to not inconvenience his older brother, but he finds an unexpected out when he meets the headstrong Amy Feather. Her boldness inspires him, and he begs her to take him on as an apprentice—hoping that she can teach him how to become strong too.</p>
             </div>
-            <div id="jack-paragraph">
+            <div id="jack-paragraph" class="character-description">
                 <h1>
                     Jack Dotter
                 </h1>
-                <p>[Words about Jack Dotter]</p>
+                <p>Jack is essentially the third protagonist of Inksoul. Serving as both Teddy's older brother and guardian, he's had a tough time finding his footing in the country of Amberleaf. Between him and Teddy, he is the only one with memories of the twisted fate of their late parents, and to make matters worse, his eyes are bright red—a sign of being “cursed”. In spite of his eyes, Jack does his best to make ends meet—intending to secure a good future for his brother. He is insanely intelligent at math and science, especially considering his lack of formal education, and has a calm disposition. When he starts to suspect Teddy is getting bullied again, he turns in a job application at his high school—hoping to both earn money for rent, and keep an eye on his dear brother. However, things don't go to plan when he starts discovering empty syringes in the school wastebins. What exactly is happening within the walls of this school…?</p>
             </div>
         </div>
+    </div>
     </main>
     <footer>
-        <p>
-            Inksoul Webpage © 2024 - Christiana Gassaway
-        </p>
-        <a href="https://www.webtoons.com/en/canvas/inksoul/list?title_no=256196" target="_blank" rel="noreferrer noopener">Read the Webtoon</a>
-        <a href="site-plan.html">Site Plan</a>
-        <a href="meet-the-characters.html">Return to Top</a>
+        <div class="footer-section">    
+            <p id="footer-1">
+                Inksoul Webpage © 2024 - Christiana Gassaway
+            </p>
+            <a href="https://www.webtoons.com/en/canvas/inksoul/list?title_no=256196" target="_blank" rel="noreferrer noopener" id="footer-2">Read the Webtoon</a>
+            <a href="site-plan.html" id="footer-3">Site Plan</a>
+            <div id="return-to-top-button">
+                <a href="meet-the-characters.html">Return to Top</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

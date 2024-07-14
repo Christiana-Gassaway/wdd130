@@ -17,6 +17,7 @@ body {
 
 
 /*  PAGE 1  */
+
 /* - - - Header - - - */
 
 header {
@@ -219,11 +220,38 @@ header {
 
 /*  PAGE 2  */
 
+/* - - - Header - - - */
+
+.upper-section-p2 {
+    width: 700px;
+    height: 450px;
+    margin: 50px auto 50px auto;
+    padding: 30px 30px;
+    text-align: center;
+    font-size: .9em;
+}
+.upper-section-p2 h1{
+    font-size: 2em;
+    font-family: "kalam";
+    font-weight: bold;
+    color: #0a783d;
+}
+
+#slideshow-and-paragraphs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #038d41;
+}
+#slideshow-all {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
   position: relative;
-  margin: auto;
+  margin: 50px auto auto auto;
 }
 
 /* Hide the images by default */
@@ -239,7 +267,7 @@ header {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: rgb(84, 84, 84);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -255,12 +283,12 @@ header {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #000000cc;
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #5f5f5f;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -271,7 +299,7 @@ header {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: #717171;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -284,14 +312,15 @@ header {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  margin-bottom: 50px;
+  background-color: #ffffff;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: #8fd8b0 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #12e772;
 }
 
 /* Fading animation */
@@ -303,4 +332,44 @@ header {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* Lower Paragraph */
+
+.lower-paragraph-p2 {
+    margin-left: 70px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: .9em;
+    text-align: center;
+}
+.lower-paragraph-p2 h1 {
+    font-size: 2em;
+    font-family: 'kalam';
+}
+#amy-paragraph {
+    color: #000000;
+    background-color: #bcffda;
+    border: 10px solid #4feb95;
+    padding: 25px 50px;
+    margin-top: 50px;
+    width: 600px;
+}
+#teddy-paragraph {
+    color: #000000;
+    background-color: #bcffda;
+    border: 10px solid #4feb95;
+    padding: 25px 50px;
+    margin-top: 50px;
+    width: 600px;
+    display: none;
+}
+#jack-paragraph {
+    color: #000000;
+    background-color: #bcffda;
+    border: 10px solid #4feb95;
+    padding: 25px 50px;
+    margin-top: 50px;
+    width: 600px;
+    display: none;
 }
