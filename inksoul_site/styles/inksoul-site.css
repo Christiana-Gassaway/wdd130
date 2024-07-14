@@ -316,7 +316,7 @@ header {
   background-color: #ffffff;
   border-radius: 50%;
   display: inline-block;
-  transition: #8fd8b0 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .active, .dot:hover {
