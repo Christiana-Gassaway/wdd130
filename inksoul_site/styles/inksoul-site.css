@@ -373,3 +373,76 @@ header {
     width: 600px;
     display: none;
 }
+
+
+/*  PAGE 3  */
+
+/* - - - Upper Section - - - */
+
+.upper-section-p3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #4feb95;
+    margin: 150px 0px 70px 0px;
+    height: auto;
+}
+#upper-section-paragraphs-p3 {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    width: 140%;
+    margin: 30px 0px 50px 80px;
+    padding: 10px;
+}
+#upper-section-paragraphs-p3 h1 {
+    font-family: "kalam";
+    background: #3a904c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#p1-pg3 {
+    text-align: left;
+    margin: 30px;
+    font-size: .7em;
+}
+#p2-pg3 {
+    text-align: left;
+    margin: 30px;
+    font-size: .7em;
+}
+#world-map-picture {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 500px;
+    border: 10px solid #0eb65a;
+    margin: 0px 0px 0px 270px;
+    justify-self: center;
+    justify-items: center;
+    box-shadow: 5px 5px 10px #1b4a24;
+}
+
+
+/* - - - Middle Section - - - */
+
+.lower-section-p3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#diagrams {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    margin: 50px 0px 50px 80px;
+}
+#p3-pg3 {
+    grid-column: 3/4;
+    grid-row: 1/4;
+    text-align: left;
+    margin: 50px 120px 50px 0px;
+    width: 600px;
+    font-size: .8em;
+}
+#p3-pg3 h1{
+    font-family: "kalam";
+    text-align: center;
+}
