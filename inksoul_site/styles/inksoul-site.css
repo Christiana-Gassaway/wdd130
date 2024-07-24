@@ -446,3 +446,12 @@ header {
     font-family: "kalam";
     text-align: center;
 }
+
+
+/* Special Paragraph */
+
+#sp-paragraph{
+    margin: 200px 0px 200px 0px;
+    text-align: center;
+    line-height: 1em;
+}
